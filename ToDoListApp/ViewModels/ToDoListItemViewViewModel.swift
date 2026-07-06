@@ -11,6 +11,7 @@ import Foundation
 import Combine
 
 class ToDoListItemtViewViewModel: ObservableObject{
+    
     init() {}
     
         func toggleIsDone(item: ToDoListItem){

@@ -10,6 +10,7 @@ import Foundation
 import Combine
 
 class ToDoListViewViewModel: ObservableObject{
+    
     @Published var showingNewItemView = false
     
     private let userId: String

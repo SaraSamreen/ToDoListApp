@@ -36,6 +36,7 @@ class NewItemViewViewViewModel: ObservableObject{
             createdDate: Date().timeIntervalSince1970,
             isDone: false
         )
+        
         // Save model
         let db = Firestore.firestore()
 
@@ -45,6 +46,7 @@ class NewItemViewViewViewModel: ObservableObject{
             .document(newId)
             .setData(newItem.asDictionary())
     }
+    
     var canSave: Bool {
         guard !title.trimmingCharacters(in: .whitespaces).isEmpty else{
             return false

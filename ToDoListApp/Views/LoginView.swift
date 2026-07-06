@@ -14,6 +14,7 @@ struct LoginView: View {
     var body: some View {
         NavigationStack{
             VStack{
+                
                 // Header
                 HeaderView(title: "To Do List", subtitle: "Get things done", angle: 15, background: .pink)
                 
@@ -37,6 +38,7 @@ struct LoginView: View {
                     .padding()
                 }
                 .offset(y: -50)
+                
                 // Create Account
                 VStack{
                     Text("New around here?")

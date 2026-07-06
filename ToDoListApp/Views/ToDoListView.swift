@@ -22,6 +22,7 @@ struct ToDoListView: View {
         self._viewModel = StateObject(
             wrappedValue: ToDoListViewViewModel(userId: userId))
     }
+    
     var body: some View {
         NavigationStack{
             VStack{
