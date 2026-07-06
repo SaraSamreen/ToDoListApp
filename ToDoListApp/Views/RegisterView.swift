@@ -19,7 +19,6 @@ struct RegisterView: View {
             
             //Form
             Form{
-                
                 if !viewModel.errorMessage.isEmpty {
                         Text(viewModel.errorMessage)
                             .foregroundColor(.red)
